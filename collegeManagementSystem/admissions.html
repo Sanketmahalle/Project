@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head><title>About</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&family=Kaushan+Script&family=Zen+Dots&display=swap" rel="stylesheet"> 
+  
+      <link rel="icon" type="image/x-icon" href="logo.png">
+</head>
+    <style>
+        * {
+          font-family: 'Kanit', sans-serif;
+
+            padding: 0;
+            box-sizing: border-box;
+            margin: 0;
+          }
+          header {
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)),
+              url(book-library-with-open-textbook.jpg);
+            background-size: cover;
+          }
+          #log {
+            height: 150px;
+            width: 150px;
+          }
+          .menu a {
+            text-decoration: none;
+            color: aliceblue;
+            padding: 10px 20px;
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+            font-weight: 600;
+          }
+          .menu a:before {
+            content: "";
+            position: absolute;
+      
+            border-bottom: 2px solid indianred;
+            transition: 0.4s linear;
+          }
+          .menu a:hover {
+            color: rgb(235, 137, 137);
+            border-bottom: 2px 2px solid indianred;
+            transition: 0.4s;
+          }
+          nav {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+          }
+          .text {
+            max-width: 650px;
+            position: absolute;
+            top: 50%;
+            left: 30%;
+            transform: translate(-50%, -30%);
+            color: aliceblue;
+            font-size: 2.5em;
+            letter-spacing: 1px;
+          }
+          .container {
+            position: relative;
+           
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            padding: 30px;
+           
+          }
+      
+          .container .card {
+            width: 900px;
+            height: 350px;
+            position: relative;
+            margin: 30px 10px;
+            padding: 20px 15px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 5px 202px rgba(0, 0, 0, 0 0.5);
+            border-radius: 15px 5px;
+            transition: 0.3s ease-in-out;
+            background: rgba(81, 110, 85, 0.514);
+          }
+          .container .card .imgbox {
+            position: relative;
+            width: 260px;
+            height: 260px;
+          }
+          .container .card .imgbox img {
+            max-width: 100%;
+            border-radius: 4px;
+          }
+          img {
+            opacity: 0.7;
+          }
+          .hh{
+            text-align: center;
+          }
+          li{
+            word-spacing: 5px;
+            margin: 20px;
+            color: rgb(89, 255, 13);
+            font-weight: bolder;
+            list-style-type: none;
+            list-style: none;
+          }
+          .l{display: flex;
+            margin: 10px ;
+            
+          }
+          h3{
+            color: rgb(109, 13, 13);
+            font-weight: 900;
+            font-size: 30px;
+            text-decoration: underline;
+          }
+          
+
+    </style>
+    <body>
+<header>
+    
+    <nav>
+        <div class="logo"><img src="logo.png" alt="" id="log" /></div>
+        <div class="menu">
+          <a
+            href="menu.html"
+           
+            >Home</a
+          >
+          <a href="about.html"  >About</a>
+          <a href="academics.html">Academics</a>
+          <a href="admissions.html"style="font-weight: 600; color: rgb(79, 250, 116)">Admissions</a>
+          <a href="placement.html">Placement</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="card">
+          <div class="">
+            <img />
+          </div>
+          <div class="">
+            
+              <h3 class="hh">Courses offered and intake capacity</h3>
+             <div class="l"> <span><li>B.E. Civil Engineering</li>
+                <li>B.E.  Computer science</li>
+                <li>B.E. Electrical Engineering</li>
+                <li>B.E. Electronics & Telecommunication</li>
+                <li>B.E. Information Technology</li></span>
+                <span style="margin-left: 200px ;" >
+                  <li>60</li>
+                  <li>120</li>
+                  <li>60</li>
+                  <li>60</li>
+                  <li>60</li>
+                </span></div>
+
+           
+          </div>
+        </div>
+      </div>
+
+      
+</header>
+    </body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>college management system</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/brands.min.css"
+      integrity="sha512-G/T7HQJXSeNV7mKMXeJKlYNJ0jrs8RsWzYG7rVACye+qrcUhEAYKYzaa+VFy6eFzM2+/JT1Q+eqBbZFSHmJQew=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <style>
+    * {
+      padding: 0;
+      box-sizing: border-box;
+      margin: 0;
+    }
+    header {
+      width: 100%;
+      height: 100vh;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)),
+        url(book-library-with-open-textbook.jpg);
+      background-size: cover;
+    }
+    #log {
+      height: 150px;
+      width: 150px;
+    }
+    .menu a {
+      text-decoration: none;
+      color: aliceblue;
+      padding: 10px 20px;
+      font-size: 20px;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      font-weight: 600;
+    }
+    .menu a:before {
+      content: "";
+      position: absolute;
+
+      border-bottom: 2px solid indianred;
+      transition: 0.4s linear;
+    }
+    .menu a:hover {
+      color: rgb(235, 137, 137);
+      border-bottom: 2px 2px solid indianred;
+      transition: 0.4s;
+    }
+    nav {
+      width: 100%;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    .text {
+      max-width: 650px;
+      position: absolute;
+      top: 50%;
+      left: 30%;
+      transform: translate(-50%, -30%);
+      color: aliceblue;
+      font-size: 2.5em;
+      letter-spacing: 1px;
+    }
+    .container {
+      position: relative;
+      width: 1100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 30px;
+      left: 300px;
+    }
+
+    .container .card {
+      max-width: 300px;
+      height: 350px;
+      position: relative;
+      margin: 30px 10px;
+      padding: 20px 15px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 5px 202px rgba(0, 0, 0, 0 0.5);
+      border-radius: 15px 5px;
+      transition: 0.3s ease-in-out;
+      background: rgba(245, 245, 220, 0.514);
+    }
+    .container .card .imgbox {
+      position: relative;
+      width: 260px;
+      height: 260px;
+    }
+    .container .card .imgbox img {
+      max-width: 100%;
+      border-radius: 4px;
+    }
+    img {
+      opacity: 0.7;
+    }
+    .bmenu i {
+      margin: 30px 30px;
+      border-radius: 50px;
+      background-color: antiquewhite;
+      width: 100px;
+      text-align: center;
+
+      box-shadow: 1px 4px 5px 1px rgb(255, 136, 0);
+    }
+    span {
+      color: brown;
+    }
+  </style>
+
+  <body>
+    <header>
+      <nav>
+        <div class="logo"><img src="logo.png" alt="" id="log" /></div>
+        <div class="menu">
+          <a
+            href="menu.html"
+            id="active"
+            style="font-weight: 600; color: rgb(79, 250, 116)"
+            >Home</a
+          >
+          <a href="about.html">About</a>
+          <a href="academics.html">Academics</a>
+          <a href="admissions.html">Admissions</a>
+          <a href="placement.html">Placement</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+      <section class="text">
+        <span style="color: chocolate">Vidharbha Youth Walfare Society's</span>
+        <h1>"Feel the difference <span> be the difference</span>"</h1>
+      </section>
+      <div class="container">
+        <div class="card">
+          <div class="imgbox">
+            <img src="i1.gif" />
+          </div>
+          <div class="content">
+            <h3 style="color: rgb(255, 38, 0)">Vision</h3>
+            <p>
+              <strong>
+                become a center of excellence in engineering education, by
+                providing the standard academics that connects knowledge,
+                practice and research.</strong
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <nav>
+        <div class="bmenu">
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          <i class="fa fa-google" aria-hidden="true"></i>
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+        </div>
+        <h style="color: rgba(0, 0, 0, 0.562)"
+          ><b>©2022 Copyright: Sanket Mahalle</b></h
+        >
+      </nav>
+    </header>
+  </body>
+</html>

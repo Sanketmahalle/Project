@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <head><title>About</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&family=Kaushan+Script&family=Zen+Dots&display=swap" rel="stylesheet"> 
+      <link rel="icon" type="image/x-icon" href="logo.png">
+</head>
+    <style>
+        * {
+            padding: 0;
+            box-sizing: border-box;
+            margin: 0;
+            font-family: 'Kanit', sans-serif;
+          }
+          header {
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)),
+              url(book-library-with-open-textbook.jpg);
+            background-size: cover;
+          }
+          #log {
+            height: 150px;
+            width: 150px;
+          }
+          .menu a {
+            text-decoration: none;
+            color: aliceblue;
+            padding: 10px 20px;
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+            font-weight: 600;
+          }
+          .menu a:before {
+            content: "";
+            position: absolute;
+      
+            border-bottom: 2px solid indianred;
+            transition: 0.4s linear;
+          }
+          .menu a:hover {
+            color: rgb(235, 137, 137);
+            border-bottom: 2px 2px solid indianred;
+            transition: 0.4s;
+          }
+          nav {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+          }
+          .text {
+            max-width: 68px;
+            position: absolute;
+            top: 50%;
+            left: 30%;
+            transform: translate(-50%, -30%);
+            color: aliceblue;
+            font-size: 2.5em;
+            letter-spacing: 1px;
+          }
+          .wrapper {
+            max-width: 65rem;
+            width: 100%;
+            margin: 0 auto;
+            
+          }
+          .tabs {
+            position: relative;
+            margin: 4rem 0;
+            background: #1abc9c;
+            
+            height: 14.75rem;
+          }
+          .tabs::before,
+          .tabs::after {
+            content: "";
+            display: table;
+          }
+          .tabs::after {
+            clear: both;
+          }
+          .tab {
+            float: left;
+            filter: blur(0.5);
+          }
+          .tab-switch {
+            display: none;
+          }
+          .tab-label {
+            position: relative;
+            display: block;
+            line-height: 2.75em;
+            height: 3em;
+            padding: 0 1.618em;
+            background: #1abc9c;
+            border-right: 0.125rem solid #16a085;
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            top: 0;
+            
+            transition: all 0.25s;
+          }
+          .tab-label:hover {
+            top: -0.25rem;
+            transition: top 0.25s;
+          }
+          .tab-content {
+            height: 12rem;
+            position: absolute;
+            z-index: 1;
+            top: 2.75em;
+            left: 0;
+            padding: 1.618rem;
+            background: #fff;
+            color: #2c3e50;
+            border-bottom: 0.25rem solid #bdc3c7;
+            opacity: 0;
+            transition: all 0.35s;
+          }
+          .tab-switch:checked + .tab-label {
+            background: #fff;
+            color: #2c3e50;
+            border-bottom: 0;
+            border-right: 0.125rem solid #fff;
+            transition: all 0.35s;
+            z-index: 1;
+            top: -0.0625rem;
+          }
+          .tab-switch:checked + label + .tab-content {
+            z-index: 2;
+            opacity: 1;
+            transition: all 0.35s;
+          }
+          #anm{
+            margin-left: 30px;
+            align-items: center;
+            align-content: center;
+            
+          }
+
+
+          
+
+    </style>
+    <body>
+<header>
+    
+    <nav>
+        <div class="logo"><img src="logo.png" alt="" id="log" /></div>
+        <div class="menu">
+          <a
+            href="menu.html"
+           
+            >Home</a
+          >
+          <a href="about.html"  >About</a>
+          <a href="academics.html"style="font-weight: 600; color: rgb(79, 250, 116)">Academics</a>
+          <a href="admissions.html">Admissions</a>
+          <a href="placement.html">Placement</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+
+      <div class="wrapper">
+        <div class="tabs">
+          <div class="tab">
+            <input type="radio" name="css-tabs" id="tab-1" checked class="tab-switch">
+            <label for="tab-1" class="tab-label">Civil Engineering</label>
+            <div class="tab-content">Civil engineering is a professional engineering discipline that deals with the design, construction and maintenance of the physical and naturally built environment, including works such as bridges, roads, canals, dams and buildings.
+             <br> <img id="anm" src="124036-civil-engineers.gif"  width="150px" height="150px"> </div>
+          </div>
+          <div class="tab">
+            <input type="radio" name="css-tabs" id="tab-2" class="tab-switch">
+            <label for="tab-2" class="tab-label">  Computer science</label>
+            <div class="tab-content">  Computer science is the study of the theoretical foundations of 
+              information and computation, and of practical techniques for their implementation and application in computer systems. 
+              <br> <img id="anm" src="programming-computer (1).gif"  width="150px" height="150px">
+            </div>
+          
+          </div>
+          <div class="tab">
+            <input type="radio" name="css-tabs" id="tab-3" class="tab-switch">
+            <label for="tab-3" class="tab-label">Electrical Engineering</label>
+            <div class="tab-content">Electrical Engineering is one of the core branches of engineering studies started as Electrical Engineering. Most of the branches like 
+              Electronics & (Tele) Communication Engineering, Computer Science & Engineering, Applied Electronics, Electronics & Instrumentation, Information Technology have been emerged as specialization from Electrical Engineering.
+              <br> <img id="anm" src="electrical-engineer.gif"  width="150px" height="150px"></div>
+          </div>
+          <div class="tab">
+            <input type="radio" name="css-tabs" id="tab-4" class="tab-switch">
+            <label for="tab-4" class="tab-label">Electronics & Telecommunication </label>
+            <div class="tab-content">Electronics is a branch of science and technology that deals with the flow of electrons through non-metallic
+               conductors, mainly semiconductors such as silicon.
+               <br> <img id="anm" src="smooth-gears-ignite-animation.gif"  width="150px" height="150px"></div>
+          </div>
+          <!-- <div class="tab">
+            <input type="radio" name="css-tabs" id="tab-5" class="tab-switch">
+            <label for="tab-5" class="tab-label">Information Technology</label>
+            <div class="tab-content">Information Technology is the study of the theoretical foundations of information and computation, and of practical techniques for their 
+              implementation and application in computer systems.
+              <br> <img id="anm" src="programming-computer (2).gif"  width="150px" height="150px"></div>
+          </div>
+           -->
+        </div>
+        
+      </div>
+
+
+
+      
+</header>
+    </body>
+</html>

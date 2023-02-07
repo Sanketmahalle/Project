@@ -1,0 +1,16 @@
+College Management System
+Theme: Codemind 
+Theme colors:  Black, Green ,White
+1Home
+ @nevBar =>About,Placement,Cources,Staff,ContactUS
+ 
+ 2.About=>History , Work For,solgan, Why Codemind
+ 
+ 3.Placement=>Placement History in CM
+ 
+ 4Cources=>Anguler ,Manual + Selenium Auto testing, Java Full Stack, React JS,Data Science with Python, .NET Full Stack, DevOps
+ 
+ 5.Staff=> Teaching Staff = Gajanan sir, Chandan jadhav sir,Dhyaneshwar Sir
+  NON-Teaching Staff = Dhanaji sir ,Dhananjay mhasal  sir, Sweta Patal
+ 
+ 6.ContactUS=>Addresss // Inquiry Form
